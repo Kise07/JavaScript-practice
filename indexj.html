@@ -8,20 +8,15 @@
 </head>
 <body>
     
-    <h1>Our custom title 1</h1>
-    <h1>Our custom title 2</h1>
-    <button class="custom-class">This is a custom button</button>
-    <p class="custom-class">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis pariatur libero, ipsa eos omnis quas quidem maiores! Voluptatum officiis minima rerum, dicta repellat facilis. Ea laborum quod exercitationem explicabo.</p>
-    <p id="customId">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis pariatur libero, ipsa eos omnis quas quidem maiores! Voluptatum officiis minima rerum, dicta repellat facilis. Ea laborum quod exercitationem explicabo.</p>
+    <div id="customId"></div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("h1, p").text("Changed via jQuery #2")
-           $("p.custom-class").text("Changed again #3")
-           $("#customId").text("Changed Again #4")
+            $("#customId").html("<h1>Hello World<span class='custom-class'>Span text</span></h1>")
+            $("span").text("CHANGED!")
         });
     </script>
 
