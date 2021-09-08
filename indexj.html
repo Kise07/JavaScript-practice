@@ -8,16 +8,15 @@
 </head>
 <body>
     
-    <section>
-        Put some HTML code in here
-    </section>
+    <input type="text" value="Hello World">
 
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-            $("section").text("<b> vs <strong>")
+            const value = $("input").val()
+            console.log(value)
         });
     </script>
 
