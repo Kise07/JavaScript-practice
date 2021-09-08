@@ -8,17 +8,23 @@
 </head>
 <body>
     
-    <div id="target">
-        Add some text before and after
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
+        </p>
+        <p class="middle-paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
+        </p>
+        <p class="middle-paragraph">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
+        </p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("div#target")
-                         .before("<h3>hello world this is a title #2</h3>")
-                         .after("<p>This is a paragraph #2</p>")
+           $("div").remove()
         });
     </script>
 
