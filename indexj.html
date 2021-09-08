@@ -8,18 +8,17 @@
 </head>
 <body>
     
-    <h1>
-        Some text in here
-    </h1>
+    <div id="target">
+        Add some text before and after
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("h1")
-                  .text("This is changed text#3")
-                  .append("<u>This is underline #2<u/>")
-                  .prepend("<i>This is underline #2<i/>")
+           $("div#target")
+                         .before("<h3>hello world this is a title #2</h3>")
+                         .after("<p>This is a paragraph #2</p>")
         });
     </script>
 
