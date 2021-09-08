@@ -8,23 +8,17 @@
 </head>
 <body>
     
-    <div>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
-        </p>
-        <p class="middle-paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
-        </p>
-        <p class="middle-paragraph">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum dolores libero quam repudiandae labore tempora asperiores mollitia, ex cupiditate a quos soluta nesciunt consequatur hic architecto, perferendis sunt alias tenetur!
-        </p>
+    <div id="parent"> <!--Parent element-->
+        <strong>Bolded word here!</strong>
+        <em>Italicized word here!</em>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea doloremque perspiciatis eos quis harum expedita quos neque quo, atque, quas amet? Maxime facilis voluptate recusandae dolor qui eum delectus.</p>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("div").remove()
+           $("div#parent").empty().html("<h1>Hello world</h1>")
         });
     </script>
 
