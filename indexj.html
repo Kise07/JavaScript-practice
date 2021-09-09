@@ -29,8 +29,11 @@
         $(document).ready(function() {
            // jQuery code in here!
            $("button").on("click", function() {
-               $(".box").slideToggle()
-           })
+               $(".box").animate({
+                   opacity: 0.5,
+                   width: "500px"
+               }, 4000)
+            })
         });
     </script>
 
