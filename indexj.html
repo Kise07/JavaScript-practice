@@ -5,30 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery 101</title>
-    <style>
-        #box {
-            width: 200px;
-            height: 200px;
-            background-color: black;
-            margin: 50px auto;
-        }
-    </style>
 </head>
 <body>
     
-    <input type="text" value=''>
+    <form>
+
+        <input type="text" name="name" placeholder="Your namr">
+        <button type="submit">Submit this form</button>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("input").on("blur", function() {
-               let websiteUrl = $(this).val()
-               if(websiteUrl.substr(0,4) !== "http") {
-                   websiteUrl = `http://${websiteUrl}`
-               }
-               $(this).val( websiteUrl )
+           $("form").on("submit", function(event) {
+               event.preventDefault()
+               console.log("form was not submitted")
            })
+
+        $("button").on("click", function(event) {
+            event.preventDefault()
+            console.log("Button is rendered useless!")
+        })
         });
     </script>
 
