@@ -23,7 +23,8 @@
         $(document).ready(function() {
            // jQuery code in here!
            $(".select-me").on("keyup", function(){
-               console.log("You pressed a key!")
+               const $input = $(".select-me")
+               console.log($input.val())
            })
         });
     </script>
