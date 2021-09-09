@@ -17,21 +17,10 @@
         $(document).ready(function() {
            // jQuery code in here!
 
-           const $parent = $("#putAButtonHere");
-           $parent.html("<button>Click me dynamic button</button>")
-           
-           $("button").click(function() {
-               console.log("I am clicked")
-           })
+        $("button").on("click", function() {
+            console.log("This is clickable too")
+        })
 
-        // $("button").on("click", function() {
-        //     console.log("This is clickable too")
-        // })
-
-        // $(document).on("click","button", function() {
-        //     console.log("333333")
-        // })
- 
         });
     </script>
 
