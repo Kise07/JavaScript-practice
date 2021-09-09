@@ -8,20 +8,30 @@
 </head>
 <body>
     
-    <div id="parent"> <!--Parent element-->
-        <strong>Bolded word here!</strong>
-        <em>Italicized word here!</em>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, ea doloremque perspiciatis eos quis harum expedita quos neque quo, atque, quas amet? Maxime facilis voluptate recusandae dolor qui eum delectus.</p>
+    <div id="putAButtonHere">
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           const $parent = $("div#parent")
-           $parent.empty()
-           // 3 seconds
-           $parent.html()
+
+           const $parent = $("#putAButtonHere");
+           $parent.html("<button>Click me dynamic button</button>")
+           
+           $("button").click(function() {
+               console.log("I am clicked")
+           })
+
+        // $("button").on("click", function() {
+        //     console.log("This is clickable too")
+        // })
+
+        // $(document).on("click","button", function() {
+        //     console.log("333333")
+        // })
+ 
         });
     </script>
 
