@@ -16,18 +16,15 @@
 </head>
 <body>
     
-    <div id="box"></div>
+    <input type="text" class="select-me" value="Hello world">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           
-           $("#box")
-                    .on("mouseenter", function() {
-                       console.log("Your mouse is hovering over this box")
+           $(".select-me").on("keyup", function(){
+               console.log("You pressed a key!")
            })
-                    .on("mouseleave", function() { console.warn("You left the box area")})
         });
     </script>
 
