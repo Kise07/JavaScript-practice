@@ -21,7 +21,7 @@
 </head>
 <body>
     
-    <button class="toggle-blue-class">Toggle blue</button>
+    <input type="text">
     <div class="box blue"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
@@ -30,8 +30,13 @@
            // jQuery code in here!
            const $box = $(".box");
 
-           $(".toggle-blue-class").on("click", () => {
-               $box.toggleClass("blue")
+           $("input").on("keyup", function() {
+               const value = $(this).val();
+               if(value === "kalob") {
+                   $box.addClass("blue")
+               } else {
+                   $box.removeClass("blue")
+               }
            })
         });
     </script>
