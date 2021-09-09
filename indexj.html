@@ -21,23 +21,17 @@
 </head>
 <body>
     
-    <button class="remove-blue">Remove blue</button>
-    <button class="remove-width">Remove width</button>
-    <div class="box blue width-100"></div>
+    <button class="toggle-blue-class">Toggle blue</button>
+    <div class="box blue"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
            const $box = $(".box");
-           const $removeBlue = $(".remove-blue")
-           const $removeWidth = $(".remove-width")
 
-           $removeBlue.on("click", () => {
-                $box.removeClass("blue")
-           })
-           $removeWidth.on("click", () => {
-               $box.removeClass("width-100")
+           $(".toggle-blue-class").on("click", () => {
+               $box.toggleClass("blue")
            })
         });
     </script>
