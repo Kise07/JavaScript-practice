@@ -10,21 +10,21 @@
             width: 100px ;
             height: 100px;
             background-color: black;
+            display: none;
         }
     </style>
 </head>
 <body>
     
-    <button id="clickme">Hide element</button>
+    <button id="clickme">Show element</button>
     <div id="box"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("#clickme").on("click", function(e) {
-              e.preventDefault()
-              $("#box").hide()
+           $("#clickme").on("click", function() {
+              $("#box").show()
            })
         });
     </script>
