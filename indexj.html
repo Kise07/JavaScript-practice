@@ -16,15 +16,14 @@
 </head>
 <body>
     
-    <input type="text" class="select-me" value="Hello world">
-    <input type="text" class="select-me" value="Type in here">
+    <input type="text" value="focus in here">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $(".select-me").on("keyup", function(){
-               console.log( $(this).val() )
+           $("input").on("focus", function() {
+               console.log("focus")
            })
         });
     </script>
