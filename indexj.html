@@ -16,14 +16,15 @@
 </head>
 <body>
     
-    <input type="text" value="focus in here">
+    <input type="text" value="Blur off of me">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("input").on("focus", function() {
-               console.log("focus")
+           $("input").on("blur", function() {
+               console.log("You blurred away from this focus")
+               console.log($(this).val())
            })
         });
     </script>
