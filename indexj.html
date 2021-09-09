@@ -30,12 +30,13 @@
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $("button").on("click", function() {
-               $(".box").animate({
-                   opacity: 0,
-                   width: "500px"
-               }, 5000)
-            })
+           $(window).on("resize", function() {
+               if($(window).width() <= 230) {
+                   $("body").css("background-color", "black")
+               } else {
+                   $("body").css("background-color", "white")
+               }
+           })
         });
     </script>
 
