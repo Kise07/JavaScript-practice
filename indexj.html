@@ -23,20 +23,14 @@
 </head>
 <body>
     
-    <button>Click me</button>
-    <div class="box"></div>
+    <input type="text">
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           $(window).on("resize", function() {
-               if($(window).width() <= 230) {
-                   $("body").css("background-color", "black")
-               } else {
-                   $("body").css("background-color", "white")
-               }
-           })
+           const $input = $("input");
+           $input.attr("type", "password") 
         });
     </script>
 
