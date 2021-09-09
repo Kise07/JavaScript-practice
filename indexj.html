@@ -21,23 +21,22 @@
 </head>
 <body>
     
-    <input type="text">
-    <div class="box blue"></div>
+    <div class="box"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script>
         $(document).ready(function() {
            // jQuery code in here!
-           const $box = $(".box");
+           $(".box")
+                //    .css("background-color", "orange")
+                //    .css("border", "10px solid black")
+                //    .css("border-radius", "50%")
 
-           $("input").on("keyup", function() {
-               const value = $(this).val();
-               if(value === "kalob") {
-                   $box.addClass("blue")
-               } else {
-                   $box.removeClass("blue")
-               }
-           })
+                .css({
+                    backgroundColor: "yellow",
+                    border: "10px solid blue",
+                    borderRadius: "10px"
+                })
         });
     </script>
 
